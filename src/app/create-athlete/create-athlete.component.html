@@ -1,0 +1,25 @@
+<h3>Athlete Registration</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="athlete.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="athlete.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Sport</label>
+      <input type="text" class="form-control" id="sport" required [(ngModel)]="athlete.sport" name="sport">
+    </div>
+
+    <button type="submit" class="btn btn-success">Add</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Your submission was successful.</h4>
+</div>

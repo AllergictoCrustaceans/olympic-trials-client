@@ -1,0 +1,22 @@
+<h3>Update Athlete Information</h3>
+
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="athlete.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="athlete.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="sport"> Sport</label>
+      <input type="text" class="form-control" id="sport" required [(ngModel)]="athlete.sport" name="sport">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

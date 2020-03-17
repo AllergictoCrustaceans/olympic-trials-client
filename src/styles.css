@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html {
+  background-color: #0d264d;
+}
+
+.nav {
+  background-color: #0d264d;
+}
+
+.container {
+  background-color: #3b4452;
+}
+

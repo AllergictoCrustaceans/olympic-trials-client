@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'olympic-trials-angular';
+  title = 'Olympic Trials';
+  subtitle = 'TEAM USA';
 }

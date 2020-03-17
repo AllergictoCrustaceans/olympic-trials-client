@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2 style="text-align: center;">Current Athlete Roster</h2>
+  </div>
+
+  <br />
+
+  <div style="text-align: center;" class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Sport</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let athlete of athletes | async">
+          <td>{{athlete.firstName}}</td>
+          <td>{{athlete.lastName}}</td>
+          <td>{{athlete.sport}}</td>
+          <td>
+            <button (click)="deleteAthlete(athlete.id)" class="btn btn-danger">Delete</button>
+            <button (click)="athleteDetails(athlete.id)" class="btn btn-info" style="margin-left: 10px;">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
